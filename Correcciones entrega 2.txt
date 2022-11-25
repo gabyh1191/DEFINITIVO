@@ -1,0 +1,16 @@
+CORRECCIONES ENTREGA N°2
+Soto, Gobbi, Herrera
+
+- Se linkeó correctamente el mysql-connector al proyecto para que funcione en cualquier computadora.
+- Se implementó el DAO para separar las operaciones a la base de datos del menú. Se agregaron las clases:
+	- FactoryDAO
+	- SedeDAO (Interface)
+	- FutbolistaDAO (Interface)
+	- PaisDAO (Interface)
+	- SedeImp (Implementacion de SedeDAO)
+	- FutbolistaImp (Implementacion de FutbolistaDAO)
+	- PaisImp (Implementacion de PaisDAO)
+El usuario elige dentro del menú la operación que desea realizar, y dependiendo la opción elegida, se mostrará un submenú. De este modo el usuario podrá elegir entre el ingreso, actualización o eliminación de un país, sede o futbolista y se le pedirá la información de ingreso correspondiente. Se le requerirá al usuario la confirmación, se realizará la entrada/salida de la base de datos y se le informara si ésta ha tenido éxito.
+
+
+	
