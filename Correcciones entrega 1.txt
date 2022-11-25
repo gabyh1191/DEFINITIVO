@@ -1,0 +1,48 @@
+CORRECCIONES ENTREGA N°1
+Grupo: Soto, Gobbi, Herrera
+
+Diagrama de clases
+
+- Se agregaron las clases "PartidoClasificatorio", "PartidoGrupo" y "PartidoEliminatorias" para diferenciar entre las distintas instancias del Mundial.
+
+- Se corrigieron las distintas cardinalidades, teniendo en cuenta que estas son: 
+	- 1 no mas de uno
+	- 0..1 cero o uno
+	- * muchos
+	- 0..* cero o muchos
+	- 1..* uno o muchos
+
+- Los grupos ahora son representados como una clase aparte que contiene como atributo una letra. Son los equipos los que tienen como atributo un grupo. 
+
+- El proceso de selección del país anfitrión se incorporó a través de la nueva clase "ComiteFIFA" quien es el encargado de hacer la selección del o de los paises anfitriones. Esta clase permite además ponerle calificación a los distintos jugadores (lo que facilita la entrega de premios).
+
+- El proceso de eliminatorias lo realiza la clase "Cronograma" que posee un listado de todos los partidos. Al finalizar cada partido, utiliza el método "ganador" (propio de Partido que devuelve el equipo que ganó) y lo coloca en el siguiente partido. Cada partido eliminatorio tiene a su vez un tipo para diferenciar la instancia que se está jugando. Cuando el torneo termine, la clase "Mundial" es quien otorga los premios a los ganadores.
+
+- Se crearon las clases "Cancion", "Balon" y "Derechos" para completar la clase "Mercadeo". Ahora se contempló la posibilidad de que haya más de una canción oficial y los derechos ahora son atributo de la clase "Pais", dado que cada país vende los derechos de transmisión a distintas compañias (pueden ser 0 o mas de una). 
+
+- Se creó una clase "PaisExcluido" que hereda de "Pais" para poder diferenciar los que clasificaron de los que no. A su vez, la clase "Mundial" posee una lista para cada tipo de pais.
+
+- La clase "Equipo" posee un atributo de tipo "Tabla", por lo cual ahora se pueden obtener los puntos de un equipo en particular, desde el método "obtenerPuntosEquipo" de "Mundial".
+
+- Se modelaron las confederaciones a través de la clase "Confederacion"
+
+- Se corrigieron las clases que figuraban como abstractas (itálica).
+
+- Se agregó el atributo de capacidad para los estadios.
+
+
+Diagrama de secuencia
+
+- Se agregó el loop que faltaba, el realizado por el método "competenciasDia".
+
+- Se agregó la flecha de retorno del método "compararCompetencias".
+
+
+Clases Java
+
+- Las clases de Java se volvieron a implementar con respecto al nuevo diagrama de clases. 
+
+
+Javadoc
+
+- Se volvió a generar con las anotaciones requeridas.
